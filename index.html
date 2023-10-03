@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Results summary component</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@100;300;400;500;600;700&display=swap");
+    </style>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          fontFamily: {
+            hanken: ["'Hanken Grotesk'"],
+          },
+          screens: {
+            'xs': '375px',
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="body-font font-hanken">
+    <section class="bg-[#ecf2fd] xs:flex xs:relative xs:overflow-hidden xs:rounded-3xl xs:shadow-md xs:max-w-xl xs:m-auto xs:mt-32">
+      <div
+        class="bg-gradient-to-b from-[#7857ff] to-[#2e2be9] rounded-b-3xl text-center px-12 py-4 h-72 flex flex-col justify-between xs:h-auto xs:w-2/4 xs:rounded-3xl xs:justify-around"
+      >
+        <h2 class="font-bold text-[#cccbfb]">Your Result</h2>
+        <div
+          class="rounded-full bg-gradient-to-b from-[#4e21ca] to-[#2421ca]/0 h-28 w-28 mx-auto flex xs:h-36 xs:w-36"
+        >
+          <div class="m-auto">
+            <div class="font-bold text-5xl text-gray-100 my-1">76</div>
+            <div class="text-xs text-slate-400 font-semibold">of 100</div>
+          </div>
+        </div>
+        <div class="mb-2">
+          <h3 class="font-bold text-gray-100 mb-1 text-xl">Great</h3>
+          <p class="text-[#cccbfb] font-medium text-xs">
+            You scored higher than 65% of the people who have taken these tests.
+          </p>
+        </div>
+      </div>
+      <div class="p-6 xs:w-2/4">
+        <h2 class="font-bold text-[#303b5a]">Summary</h2>
+        <ul class="mb-4 mt-6 h-56 flex flex-col justify-between">
+          <li class="flex justify-between p-4 bg-gray-200 rounded-md text-sm h-11 items-center">
+            <span class="flex font-bold text-[#ff5757]"><img src="./assets/images/icon-reaction.svg" alt="Reaction" class="mr-2">Reaction</span>
+            <span class="text-gray-500/70 flex w-14 justify-around font-bold text-sm"
+              ><span class="text-[#303b5a]">80</span><span>/</span>100</span
+            >
+          </li>
+          <li class="flex justify-between p-4 bg-gray-200 rounded-md text-sm h-11 items-center">
+            <span class="flex font-bold text-[#ffb01f]"><img src="./assets/images/icon-memory.svg" alt="Memory" class="mr-2">Memory</span>
+            <span class="text-gray-500/70 flex w-14 justify-around font-bold text-sm"
+              ><span class="text-[#303b5a]">92</span><span>/</span>100</span
+            >
+          </li>
+          <li class="flex justify-between p-4 bg-gray-200 rounded-md text-sm h-11 items-center">
+            <span class="flex font-bold text-[#00bd91]"><img src="./assets/images/icon-verbal.svg" alt="Verbal" class="mr-2">Verbal</span>
+            <span class="text-gray-500/70 flex w-14 justify-around font-bold text-sm"
+              ><span class="text-[#303b5a]">61</span><span>/</span>100</span
+            >
+          </li>
+          <li class="flex justify-between p-4 bg-gray-200 rounded-md text-sm h-11 items-center">
+            <span class="flex font-bold text-[#1125d4]"><img src="./assets/images/icon-visual.svg" alt="Visual" class="mr-2">Visual</span>
+            <span class="text-gray-500/70 flex w-14 justify-around font-bold text-sm"
+              ><span class="text-[#303b5a]">72</span><span>/</span>100</span
+            >
+          </li>
+        </ul>
+        <button
+          class="bg-[#303b5a] text-white font-bold w-full rounded-full mt-2 h-10 hover:bg-gradient-to-b from-[#7857ff] to-[#2e2be9]"
+        >
+          Continue
+        </button>
+      </div>
+    </section>
+  </body>
+</html>
